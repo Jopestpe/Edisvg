@@ -1,5 +1,3 @@
 # EditorSVG
 
 Editor SVG
-
-* 
