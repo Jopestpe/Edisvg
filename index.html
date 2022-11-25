@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MiniSite</title>
+    <title>EditorSVG</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script> 
 </head>
 <body>
-    <div id="Blocos">
-        <textarea id="textosvg"></textarea>
-        <p id="psvg"></p>
+    <div id="Coordenadas"></div>
+    <div id="AreaDeTrabalhoEsquerda">
+        <textarea id="TextoSVGAtual"></textarea>
     </div>
-    <button id="MiniSite" onclick=fn()>Atualizar</button>
-    <button id="MiniSite" onclick=fn2()>Baixar</button>
+    <div id="AreaDeTrabalhoDireita">
+        <p id="MostrarSVG"></p>
+    </div>  
+    <div id="BarraDeFerramentas">
+        <input id="EntradaDeArquivo" type="file">
+        <button id="BotaoAtualizar">Atualizar</button>
+        <input id="NomeDoArquivo" type="text">
+        <button id="BotaoBaixar">Baixar</button>
+    </div>
 </body>
 </html>
