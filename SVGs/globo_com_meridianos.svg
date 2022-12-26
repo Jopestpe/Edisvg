@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="368.64pt"
+    height="368.64pt"
+    viewBox="0 0 368.64 368.64">
+<defs/>
+<ellipse id="shape0" transform="translate(23.04, 23.04)" rx="161.28" ry="161.28" cx="161.28" cy="161.28" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="bevel"/><ellipse id="shape0" transform="matrix(0.900468577410636 0 0 0.99999998076071 80.64 23.04)" rx="115.140053302181" ry="161.280003102913" cx="115.140053302181" cy="161.280003102913" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="bevel"/><path id="shape1" transform="matrix(1 0 0 1.07063517661491 184.32 23.928493696763)" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M2.84217e-14 0L2.84217e-14 298.632" sodipodi:nodetypes="cc"/><path id="shape01" transform="matrix(1.09062500925245 0 0 0.999999965205913 59.0400025551162 92.16)" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L230.4 0" sodipodi:nodetypes="cc"/><path id="shape02" transform="matrix(1.08125002967069 0 0 0.999999937733815 60.4800016596378 276.404380076257)" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L230.4 0" sodipodi:nodetypes="cc"/><path id="shape03" transform="matrix(1.12953358704178 0 0 0.999999915458475 27.7200011996582 184.32)" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="2" d="M0 0L277.92 0" sodipodi:nodetypes="cc"/>
+</svg>
