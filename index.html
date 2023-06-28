@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="Icone.png"/>
+    <title>EditorSVG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+    <script src="ExemplosSVG.js" defer></script> 
+</head>
+<body>
+    <div id="Coordenadas"></div>
+    <div id="Barra">
+        <input class="BotaoBarra" id="EntradaDeArquivo" type="file" accept='.svg'>
+        <button class="BotaoBarra" id="BotaoEntradaDeArquivo">Enviar SVG</button>
+        <button class="BotaoBarra" id="BotaoBaixar">Baixar SVG</button>
+        <input class="BotaoBarra" id="SelecionarCor" type="color">
+        <button class="BotaoBarra" id="BotaoCor">Cor Fundo</button>
+        <button class="BotaoBarra" id="BotaoExemplos">Exemplos</button>
+        <div id="ListaExemplos">
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Retangulo')">Retangulo</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Gradiente')">Gradiente</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Circulo')">Circulo</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Elipse')">Elipse</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Linha')">Linha</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Poligono')">LinhaPoligono</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Caminho')">Caminho</button>
+            <button class="BotaoBarra" onclick="SelecionarExemplo('Texto')">Texto</button>
+        </div>
+        <textarea id="ExemploTextoSVG" readonly></textarea>
+    </div>
+    <div id="Janelas">
+        <textarea id="TextoSVG"></textarea>
+        <p id="Posicao"></p>
+        <div id="ImagemSVG"></div>
+    </div>
+</body>
+</html>
