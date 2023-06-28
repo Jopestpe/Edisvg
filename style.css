@@ -1,0 +1,93 @@
+html,body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+#Barra {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.3vh solid rgb(240, 240, 240);
+}
+.BotaoBarra {
+    margin: 0.5% 0% 0.5% 1%;
+    font-size: 100%;
+    padding: 0.5% 1% 0.5% 1%;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 0.3vh solid rgb(240, 240, 240);
+}
+#EntradaDeArquivo,#SelecionarCor {
+    display: none;
+}
+#ListaExemplos {
+    display: none;
+    position: flex;
+    top:0;
+}
+#ExemploTextoSVG {
+    display: none;
+    width: 50%;
+    height: 30vh;
+    font-size: 140%;
+    border: 0.3vh solid rgb(240, 240, 240);
+    margin: 0.5% 0% 0.5% 1%;
+    resize: none;
+}
+#Janelas {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center; 
+    align-items: center; 
+}
+#Janelas > * {
+    margin: 1%;
+}
+#TextoSVG {
+    resize: none;
+    width: 40%;
+    height: 90%;
+    font-size: 140%;
+    color:rgb(0, 0, 0);
+    border: 0.3vh solid rgb(240, 240, 240);
+}
+#Posicao {
+    width: 5%;
+    height: 30vh;
+    font-size: 140%;
+    text-align: center;
+    border: 0.3vh solid rgb(240, 240, 240);
+    overflow: auto;
+}
+#ImagemSVG {
+    cursor: crosshair;
+    width: 40%;
+    height: 90%;
+    border: 0.3vh solid rgb(240, 240, 240);
+    overflow: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ImagemSVG svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+#Coordenadas{
+    position: absolute;
+    margin: 0.5% 0% 0.5% 1%;
+    font-size: 100%;
+    padding: 0.5% 1% 0.5% 1%;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 0.3vh solid rgb(240, 240, 240);
+}
