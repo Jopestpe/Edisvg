@@ -1,0 +1,31 @@
+body {
+    background-color: #111111;
+    color: bisque;
+}
+
+#grade {
+    display: grid;
+    border: #ffffff solid 1px;
+} 
+
+.quadrado {
+    border: #111111 solid 1px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.quadrado:hover {
+    background-color: #cecece;
+}
+
+.quadrado_pressionado {
+    border: #111111 solid 1px;
+    background-color: #111111;
+}
+
+#svg {
+    border: #ffffff solid 1px;
+    background-color: #111111;
+    width: 100%;
+    height: 100%;
+}
