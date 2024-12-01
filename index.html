@@ -1,37 +1,59 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="pt-br">
+
 <head>
-    <link rel="icon" type="image/png" href="Icone.png"/>
-    <title>EditorSVG</title>
+    <meta name="description" content="Edisvg é uma página para carregar, editar e criar SVG">
+    <meta name="keywords" content="carregar SVG, editar SVG, criar SVG">
+    <meta name="author" content="Jopestpe">
+    <meta name="publisher" content="Jopestpe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <title>Edisvg</title>
+    <link rel="icon" type="image/svg+xml" href="icone.svg" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> 
-    <script src="ExemplosSVG.js" defer></script> 
+    <link rel="stylesheet" href="scroll.css">
+    <script src="elementos.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div id="Coordenadas"></div>
-    <div id="Barra">
-        <input class="BotaoBarra" id="EntradaDeArquivo" type="file" accept='.svg'>
-        <button class="BotaoBarra" id="BotaoEntradaDeArquivo">Enviar SVG</button>
-        <button class="BotaoBarra" id="BotaoBaixar">Baixar SVG</button>
-        <input class="BotaoBarra" id="SelecionarCor" type="color">
-        <button class="BotaoBarra" id="BotaoCor">Cor Fundo</button>
-        <button class="BotaoBarra" id="BotaoExemplos">Exemplos</button>
-        <div id="ListaExemplos">
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Retangulo')">Retangulo</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Gradiente')">Gradiente</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Circulo')">Circulo</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Elipse')">Elipse</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Linha')">Linha</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Poligono')">LinhaPoligono</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Caminho')">Caminho</button>
-            <button class="BotaoBarra" onclick="SelecionarExemplo('Texto')">Texto</button>
-        </div>
-        <textarea id="ExemploTextoSVG" readonly></textarea>
+    <div class="barra">
+
+        <a class="link" href="./pixel/index.html">Modo Pixel</a>
+
+        <input class="ocultar" id="EntradaDeArquivo" type="file" multiple accept=".svg">
+        <button class="barra_opcao acao" aria-label="importar svg" id="BotaoEntradaDeArquivo">Importar SVG</button>
+
+        <button class="entrada_cor acao" aria-label="cor fundo" id="BotaoCorFundo" type="color"></button>
+        <input class="ocultar" id="CorFundo" type="color">
+
+        <select class="barra_opcao acao opcoes" id="selecionar_elemento" onchange="adicionar_exemplo()">
+            <option value="retangulo">Retângulo</option>
+            <option value="gradiente">Gradiente</option>
+            <option value="circulo">Círculo</option>
+            <option value="elipse">Elipse</option>
+            <option value="linha">Linha</option>
+            <option value="poligono">Polígono</option>
+            <option value="caminho">Caminho</option>
+            <option value="texto">Texto</option>
+        </select>
+
+        <button class="barra_opcao acao" id="BotaoBaixar">Exportar SVG</button>
+        <button class="barra_opcao acao" id="BotaoBaixarPNG">Exportar PNG</button>
+
     </div>
-    <div id="Janelas">
-        <textarea id="TextoSVG"></textarea>
-        <p id="Posicao"></p>
-        <div id="ImagemSVG"></div>
+
+    <div class="bloco_abas">
+        <div id="criar_aba">+</div>
+        <div id="abas" class="barra"></div>
     </div>
+        
+    <div class="editar">
+        <textarea id="texto_svg" class="acao" rows="10" cols="50"></textarea>
+        <div id="vizualizar_svg"></div>
+    </div>
+
 </body>
+
 </html>

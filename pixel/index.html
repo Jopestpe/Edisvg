@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Edisvg é uma página para carregar, editar e criar SVG">
+    <meta name="keywords" content="carregar SVG, editar SVG, criar SVG">
+    <meta name="author" content="Jopestpe">
+    <meta name="publisher" content="Jopestpe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <title>Edisvg</title>
+    <link rel="icon" type="image/svg+xml" href="../icone.svg" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../scroll.css">
+    <script src="pixel.js" defer></script>
+</head>
+
+<body>
+    <div class="barra">
+
+        <a class="link" href="../index.html">Modo Normal</a>
+
+        <button class="entrada_cor acao" aria-label="cor fundo" id="BotaoCorFundo" type="color"></button>
+        <input class="ocultar" id="CorFundo" type="color">
+
+        <button class="entrada_cor acao" aria-label="cor fundo" id="BotaoCorPixel" type="color"></button>
+        <input class="ocultar" id="CorPixel" type="color" value="#ffffff">
+
+        <button class="barra_opcao acao" id="BotaoBaixar">Exportar SVG</button>
+        <button class="barra_opcao acao" id="BotaoBaixarPNG">Exportar PNG</button>
+
+        Tamanho
+        <div class="controle">
+            <button aria-label="diminui tamanho svg" class="seta acao2">◀</button>
+            <input class="numeral acao2" id="TamanhoSVG" type="number" value="5" min="1"
+                aria-label="tamanho svg">
+            <button aria-label="aumenta tamanho svg" class="seta acao2">▶</button>
+        </div>
+
+        Grade
+        <div class="controle">
+            <button aria-label="diminui grade" class="seta acao2">◀</button>
+            <input class="numeral acao2" id="TamanhoGrade" type="number" value="1" min="1"
+                aria-label="tamanho da grade">
+            <button aria-label="aumenta grade" class="seta acao2">▶</button>
+        </div>
+
+        <button id="BotaoBorracha" class="barra_opcao">[E]</button>
+       
+    </div>
+
+    <div class="bloco_abas">
+        <div id="criar_aba">+</div>
+        <div id="abas" class="barra"></div>
+    </div>
+
+    <div class="bloco_pixel">
+        <div id="pixel_svg"></div>
+    </div>
+
+</body>
+
+</html>
