@@ -11,18 +11,19 @@
     <meta http-equiv="Cache-Control" content="max-age=31536000">
     <title>Edisvg</title>
     <link rel="icon" type="image/svg+xml" href="icone.svg" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scroll.css">
-    <script src="elementos.js" defer></script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/scroll.css">
+    <script src="scripts/comum.js" defer></script>
+    <script src="scripts/elementos.js" defer></script>
+    <script src="scripts/normal.js" defer></script>
 </head>
 
 <body>
     <div class="barra">
 
         <a class="link" href="./pixel/index.html">Modo Pixel</a>
-
-        <input class="ocultar" id="EntradaDeArquivo" type="file" multiple accept=".svg">
+    
+         <input class="ocultar" id="EntradaDeArquivo" type="file" multiple accept=".svg">
         <button class="barra_opcao acao" aria-label="importar svg" id="BotaoEntradaDeArquivo">Importar SVG</button>
 
         <button class="entrada_cor acao" aria-label="cor fundo" id="BotaoCorFundo" type="color"></button>
@@ -41,7 +42,7 @@
 
         <button class="barra_opcao acao" id="BotaoBaixar">Exportar SVG</button>
         <button class="barra_opcao acao" id="BotaoBaixarPNG">Exportar PNG</button>
-
+        <button class="barra_opcao acao" id="BotaoOtimizar">Otimizar</button>
     </div>
 
     <div class="bloco_abas">
@@ -49,7 +50,7 @@
         <div id="abas" class="barra"></div>
     </div>
         
-    <div class="editar">
+    <div class="editar" id="editar">
         <textarea id="texto_svg" class="acao" rows="10" cols="50"></textarea>
         <div id="vizualizar_svg"></div>
     </div>

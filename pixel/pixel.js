@@ -10,7 +10,7 @@ const BotaoBorracha = document.getElementById('BotaoBorracha')
 let svg_padrao = `<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5"></svg>`;
 const pixel_salvo = { abas: [{ nome: "Nova aba", conteudo: svg_padrao }] };
 let aba_atual = 1;
-let tamanho_grade = document.getElementById('TamanhoGrade').value;
+let tamanho_grade = 1;
 let tamanho_svg = document.getElementById('TamanhoSVG').value;
 let cor_pixel = document.getElementById('CorPixel').value;
 let desenhando = false;
@@ -127,10 +127,6 @@ function atualizarVariavel(id) {
     let valor = parseInt(input.value);
     input.value = valor;
     switch (id) {
-        case 'TamanhoGrade':
-            tamanho_grade = valor;
-            alterar_tamanho_svg()
-            break;
         case 'TamanhoSVG':
             tamanho_svg = valor;
             alterar_tamanho_svg()

@@ -1,0 +1,42 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+@-moz-document url-prefix() {
+	* {
+		scrollbar-color: var(--cor-azul) transparent;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+	::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: var(--raio-borda);
+		background-color: var(--cor-borda);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		cursor: pointer;
+		background-color: var(--cor-azul);
+	}
+
+	.trocar_cor {
+		font-size: 100%
+	}
+}
+
+.opcoes option {
+	background-color: var(--cor-fundo);
+	color: var(--cor-texto);
+	text-align: start;
+}
